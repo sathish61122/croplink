@@ -7,7 +7,6 @@ import siteConfiguration from './.figma/make/site.json'
 export default defineConfig(({ mode }) => {
   // .figma/make/deploy-preview passes `--mode development` for cached-preview builds.
   const emitSourcemaps = mode === 'development'
-
   return {
     base: process.env.FIGMA_PUBLIC_URL ? `${process.env.FIGMA_PUBLIC_URL}/` : '/',
     build: {
@@ -39,7 +38,6 @@ export default defineConfig(({ mode }) => {
     },
   }
 })
-
 type FigmaSiteConfiguration = {
   title?: string
   description?: string
