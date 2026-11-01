@@ -1,3 +1,3 @@
 [tools]
-node = "9722"
+node = "22"
 "npm:pnpm" = "10.34.3"
